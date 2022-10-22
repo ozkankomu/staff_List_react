@@ -44,6 +44,7 @@ const Form = () => {
             type="text"
             className="form-control"
             id="firstname"
+            required
             name="firstname"
             value={form.firstname}
             onChange={(e) =>
@@ -62,6 +63,7 @@ const Form = () => {
           <input
             type="text"
             className="form-control"
+            required
             id="lastname"
             name="firstname"
             value={form.lastname}
@@ -74,6 +76,7 @@ const Form = () => {
           </label>
           <input
             type="email"
+            required
             className="form-control"
             id="email"
             name="firstname"
@@ -87,6 +90,7 @@ const Form = () => {
           </label>
           <input
             type="password"
+            required
             className="form-control"
             id="password"
             name="firstname"
@@ -95,7 +99,11 @@ const Form = () => {
           />
         </div>
 
-        <button type="submit" className="btn btn-primary" name="button">
+        <button
+          type="submit"
+          className="btn btn-danger w-100 my-3"
+          name="button"
+        >
           Submit
         </button>
       </form>
